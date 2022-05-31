@@ -1,16 +1,11 @@
-<mxfile host="app.diagrams.net" modified="2022-05-31T12:05:11.099Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36" etag="XXBahyDndAAJV3X-tBUE" version="17.4.6" type="github">
+<mxfile host="app.diagrams.net" modified="2022-05-31T12:19:47.358Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36" etag="3icwRHHQwb0QYzrKoeaj" version="17.4.6" type="github">
   <diagram id="WoDHXoN576q5PnCg36Me" name="第 1 页">
-    <mxGraphModel dx="939" dy="677" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
+    <mxGraphModel dx="1339" dy="677" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="BNzz6FFe_rrqk4d4cfUV-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Comic Sans MS;" edge="1" parent="1" source="0K7TBATuOPwZqWg2V9cS-1" target="BNzz6FFe_rrqk4d4cfUV-2">
+        <mxCell id="BNzz6FFe_rrqk4d4cfUV-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Comic Sans MS;startArrow=none;" edge="1" parent="1" source="BNzz6FFe_rrqk4d4cfUV-21" target="BNzz6FFe_rrqk4d4cfUV-2">
           <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="BNzz6FFe_rrqk4d4cfUV-4" value="动态代理" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Comic Sans MS;" vertex="1" connectable="0" parent="BNzz6FFe_rrqk4d4cfUV-3">
-          <mxGeometry x="-0.3" y="2" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
         </mxCell>
         <mxCell id="0K7TBATuOPwZqWg2V9cS-1" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;feign接口调用&lt;/font&gt;" style="html=1;sketch=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
           <mxGeometry x="304" y="30" width="110" height="60" as="geometry" />
@@ -49,11 +44,52 @@
         <mxCell id="BNzz6FFe_rrqk4d4cfUV-15" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;hystrixCommand = new HystrixCommand(setter)&lt;/font&gt;" style="html=1;sketch=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="224" y="450" width="270" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="BNzz6FFe_rrqk4d4cfUV-18" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;hystrixCommand.run(){&lt;br&gt;&lt;br&gt;}&lt;/font&gt;" style="html=1;sketch=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+        <mxCell id="BNzz6FFe_rrqk4d4cfUV-28" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Comic Sans MS;endArrow=none;endFill=0;" edge="1" parent="1" source="BNzz6FFe_rrqk4d4cfUV-18" target="BNzz6FFe_rrqk4d4cfUV-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BNzz6FFe_rrqk4d4cfUV-30" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Comic Sans MS;endArrow=none;endFill=0;" edge="1" parent="1" source="BNzz6FFe_rrqk4d4cfUV-18" target="BNzz6FFe_rrqk4d4cfUV-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BNzz6FFe_rrqk4d4cfUV-18" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;hystrixCommand.run(){&lt;br&gt;}&lt;/font&gt;" style="html=1;sketch=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="224" y="590" width="270" height="60" as="geometry" />
         </mxCell>
         <mxCell id="BNzz6FFe_rrqk4d4cfUV-21" value="HystrixInvocationHandler" style="swimlane;sketch=1;fontFamily=Comic Sans MS;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="10" y="130" width="730" height="540" as="geometry" />
+          <mxGeometry x="-80" y="125" width="900" height="685" as="geometry" />
+        </mxCell>
+        <mxCell id="BNzz6FFe_rrqk4d4cfUV-23" value="&lt;div&gt;&lt;span&gt;run方法内容主要就一行：&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;HystrixInocationHandler.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;this.dispatch.get(method)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;.invoke(args)&lt;br&gt;这行代码主要从dispath这个成员变量中获取method对象对应的MethodHandler方法然后执行调用&lt;/span&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontFamily=Comic Sans MS;size=0;sketch=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;" vertex="1" parent="BNzz6FFe_rrqk4d4cfUV-21">
+          <mxGeometry x="60" y="430" width="190" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="BNzz6FFe_rrqk4d4cfUV-34" value="HystrixInvocationHandler" style="swimlane;sketch=1;fontFamily=Comic Sans MS;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="BNzz6FFe_rrqk4d4cfUV-21">
+          <mxGeometry width="900" height="685" as="geometry" />
+        </mxCell>
+        <mxCell id="BNzz6FFe_rrqk4d4cfUV-35" value="&lt;div&gt;&lt;span&gt;run方法内容主要就一行：&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;HystrixInocationHandler.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;this.dispatch.get(method)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;.invoke(args)&lt;br&gt;这行代码主要从dispath这个成员变量中获取method对象对应的MethodHandler方法然后执行调用&lt;/span&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontFamily=Comic Sans MS;size=0;sketch=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;" vertex="1" parent="BNzz6FFe_rrqk4d4cfUV-34">
+          <mxGeometry x="60" y="430" width="190" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="BNzz6FFe_rrqk4d4cfUV-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Comic Sans MS;endArrow=none;" edge="1" parent="1" source="0K7TBATuOPwZqWg2V9cS-1" target="BNzz6FFe_rrqk4d4cfUV-21">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="359" y="90" as="sourcePoint" />
+            <mxPoint x="359" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BNzz6FFe_rrqk4d4cfUV-26" value="动态代理" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Comic Sans MS;" vertex="1" connectable="0" parent="BNzz6FFe_rrqk4d4cfUV-25">
+          <mxGeometry x="-0.3" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BNzz6FFe_rrqk4d4cfUV-32" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Comic Sans MS;endArrow=classic;endFill=1;" edge="1" parent="1" source="BNzz6FFe_rrqk4d4cfUV-29" target="BNzz6FFe_rrqk4d4cfUV-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BNzz6FFe_rrqk4d4cfUV-39" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Comic Sans MS;endArrow=none;endFill=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="BNzz6FFe_rrqk4d4cfUV-29" target="BNzz6FFe_rrqk4d4cfUV-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BNzz6FFe_rrqk4d4cfUV-29" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;hystrixCommand.execute()&lt;/font&gt;" style="html=1;sketch=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="224" y="730" width="270" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="BNzz6FFe_rrqk4d4cfUV-31" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;SynchronousMethodHandler.invoke()&lt;/font&gt;" style="html=1;sketch=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="224" y="860" width="270" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="BNzz6FFe_rrqk4d4cfUV-38" value="SynchronousMethodHandler" style="swimlane;sketch=1;fontFamily=Comic Sans MS;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="-90" y="820" width="933" height="660" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
