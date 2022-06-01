@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-06-01T07:22:31.318Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36" etag="LTxpWHq66EyQIl43wP41" version="17.4.6" type="github">
+<mxfile host="app.diagrams.net" modified="2022-06-01T09:03:59.907Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36" etag="a2cBCKyOqDCSH89u8vJO" version="17.4.6" type="github">
   <diagram id="WoDHXoN576q5PnCg36Me" name="第 1 页">
-    <mxGraphModel dx="1339" dy="677" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
+    <mxGraphModel dx="1339" dy="604" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -30,8 +30,8 @@
         <mxCell id="BNzz6FFe_rrqk4d4cfUV-10" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;Setter setter = setterMethodMap.get(method)&lt;/font&gt;" style="html=1;sketch=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="224" y="310" width="270" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="BNzz6FFe_rrqk4d4cfUV-13" value="动态代理拿到当前的方法对象,再通过成员变量setterMethodMap拿到对应的Setter对象" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontFamily=Comic Sans MS;size=0;sketch=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="20" y="270" width="150" height="120" as="geometry" />
+        <mxCell id="BNzz6FFe_rrqk4d4cfUV-13" value="动态代理拿到当前的方法对象,再通过成员变量setterMethodMap拿到对应的Setter对象，setter对象中包含要调用的服务名，及Hystrix要用到的commandKey: ExaminationApi#getExamLevelInfo()" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontFamily=Comic Sans MS;size=0;sketch=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="-60" y="270" width="230" height="120" as="geometry" />
         </mxCell>
         <mxCell id="BNzz6FFe_rrqk4d4cfUV-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Comic Sans MS;endArrow=classic;endFill=1;" edge="1" parent="1" source="BNzz6FFe_rrqk4d4cfUV-15" target="BNzz6FFe_rrqk4d4cfUV-18">
           <mxGeometry relative="1" as="geometry" />
@@ -200,17 +200,11 @@
         <mxCell id="BNzz6FFe_rrqk4d4cfUV-78" value="Inteceptor.Chain chain = new RealInteceptorChain(inteceptors, transmitter, null, 0, originalReuquest, this, client.connectTimeoutMills(), client.readTimeOutMills(), client.writeTimeoutMillis()" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontFamily=Comic Sans MS;size=0;sketch=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="BNzz6FFe_rrqk4d4cfUV-71">
           <mxGeometry x="10" y="250" width="190" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="BNzz6FFe_rrqk4d4cfUV-85" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Comic Sans MS;fontColor=#000000;startArrow=none;startFill=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="BNzz6FFe_rrqk4d4cfUV-82" target="BNzz6FFe_rrqk4d4cfUV-76">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
         <mxCell id="BNzz6FFe_rrqk4d4cfUV-87" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Comic Sans MS;fontColor=#000000;startArrow=none;startFill=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="BNzz6FFe_rrqk4d4cfUV-82" target="BNzz6FFe_rrqk4d4cfUV-86">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="BNzz6FFe_rrqk4d4cfUV-82" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;proceed(originalReuqest)&lt;/font&gt;" style="html=1;sketch=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="164" y="2190" width="390" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="BNzz6FFe_rrqk4d4cfUV-83" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Comic Sans MS;fontColor=#000000;startArrow=none;startFill=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="BNzz6FFe_rrqk4d4cfUV-76" target="BNzz6FFe_rrqk4d4cfUV-82">
-          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="BNzz6FFe_rrqk4d4cfUV-84" value="okhttp: RealInterceptorChain" style="swimlane;sketch=1;fontFamily=Comic Sans MS;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
           <mxGeometry x="-6" y="2150" width="730" height="100" as="geometry" />
@@ -262,6 +256,9 @@
         </mxCell>
         <mxCell id="BNzz6FFe_rrqk4d4cfUV-102" value="接下来的步骤就是从链接池中获取RealConnection进行连接，然后建立握手等进行数据的传输与返回的逻辑了" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontFamily=Comic Sans MS;size=0;sketch=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="BNzz6FFe_rrqk4d4cfUV-101">
           <mxGeometry x="30" y="290" width="150" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="BNzz6FFe_rrqk4d4cfUV-104" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Comic Sans MS;fontColor=#000000;startArrow=none;startFill=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="BNzz6FFe_rrqk4d4cfUV-76" target="BNzz6FFe_rrqk4d4cfUV-84">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
