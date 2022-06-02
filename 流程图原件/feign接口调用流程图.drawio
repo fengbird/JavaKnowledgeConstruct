@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-06-02T12:06:26.696Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36" etag="Ik2pgnDhKj8Aj11XK_nY" version="17.4.6" type="github">
+<mxfile host="app.diagrams.net" modified="2022-06-02T12:07:50.479Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36" etag="vhqPFSuSySVFduXa81Ut" version="17.4.6" type="github">
   <diagram id="WoDHXoN576q5PnCg36Me" name="第 1 页">
     <mxGraphModel dx="1339" dy="604" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
@@ -417,6 +417,9 @@
         </mxCell>
         <mxCell id="BNzz6FFe_rrqk4d4cfUV-164" value="feign-core: ErrorDecoder.Default" style="swimlane;sketch=1;fontFamily=Comic Sans MS;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
           <mxGeometry x="600" y="4550" width="380" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="BNzz6FFe_rrqk4d4cfUV-166" value="这里可实现ErrorDecoder接口，重写异常时响应的内容及异常" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontFamily=Comic Sans MS;size=0;sketch=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="715.5" y="4670" width="150" height="120" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
