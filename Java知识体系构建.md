@@ -127,20 +127,50 @@
 3. 项目中为什么由httpclient改为了okhttp，其实两者性能上没太大差异，至于创建对象okhttp的builder模式啥的由于用了feign，这些也涉及不到，真要说的话，OKhttp在用连接池的时候对连接池内的对象管理的更完善，httpclient针对异常的链接对象不会立马处理，会等到下次再用到的时候先报超时处理，然后再生成新的对象，虽然也能正常调用到，但这种方式性能肯定比不上OKhttp的
 4. 当时项目里面遇到的坑，是由于当时项目中用feign的时候没有直接用feign对应封装的starter，而是用的feign-httpclient,但是并未引入具体的httpclient包，导致实际调用的时候并未用到ApacheHttpClient对象，而是用了Java中的HttpUrlConnection对象，这个对象性能很差，而且是短连接的，每次都得创建对象，多线程的时候很容易因为频繁创建对象导致CPU跑满的问题
 
-### feign如何进行应用之间的调用的
+### feign中可配置超时时间的地方有哪些，什么关系
 
-#### api调用service的接口
+* `feign.httpclient` 中可配置链接超时时间及最大连接数，这两个参数不仅对httpclient有效，okhttp也是用的这两个参数
 
-1. 定义好的feign接口在项目启动时会被生成对应的代理对象
-2. 在进行实际调用时，会进入HystrixInvocationHandler中的invoke方法
-3. 该方法会从setterMethodMap中根据待调用的方法对象找到与之对应的Setter对象，然后调用执行该对象的run方法
-4. 在run方法中通过当前对象的成员变量dispatch获取到方法对象对应的MethodHandler->SynchronousMethodHandler
-5. 调用执行SynchronousMethodHandler的invoke方法，
-   1. 在ReflectiveFeignde create方法中创建拼接待请求的请求头参数放入RequestTemplate中
-   2. 执行executeAndDecode,进入其中的targetRequest方法，并从中成员变量requestInterceptors中进一步获取`自定义`的FeignInterceptor中获取信息，在此处可拿到HttpServletRequest对象，并从中获取所有的请求头信息(包括host地址)，以及在拦截器里面自行设置多的参数信息，均设置进RequestTemplate中，最后调用当前类的成员变量target的invoke方法返回最终的Feign定义的Request对象回executeAndDecode方法中，然后接下来调用client.execute(request,options)方法，这里的client根据对应的配置就会实例化为OkHttpClient or ApacheHttpClient，然后调用对应client的execute方法
-6. 进入FeignInterceptor
+* `feign.client` 中可配置所有feign接口的链接超时及读取超时，也可配置指定某一个接口的参数
 
-* 有哪些核心配置项
+* `ribbon` 中也可配置读取超时及连接超时
+
+* 三者参数生效的优先级是：`feign.client`>`ribbon`>`feign.httpclient`  
+
+* 若要修改`feign.client`的配置参数，那么和其对应的okHttp最好也配置为相同的值，因为若是值不同，那么在进行请求调用的时候会每个请求都会产生一个新的okHttpClient的对象，但是，在application.yaml中是无法配置okHttpClient的读取超时时间的，因此需要用Java类来配置okHttpClient,配置文件如下所示：
+
+  ```java
+  @Configuration
+  public class OkhttpConfiguration {
+  
+      @Bean
+      @ConditionalOnMissingBean(ConnectionPool.class)
+      public ConnectionPool httpClientConnectionPool(
+              FeignHttpClientProperties httpClientProperties,
+              OkHttpClientConnectionPoolFactory connectionPoolFactory) {
+          Integer maxTotalConnections = httpClientProperties.getMaxConnections();
+          Long timeToLive = httpClientProperties.getTimeToLive();
+          TimeUnit ttlUnit = httpClientProperties.getTimeToLiveUnit();
+          return connectionPoolFactory.create(maxTotalConnections, timeToLive, ttlUnit);
+      }
+  
+      @Bean
+      public okhttp3.OkHttpClient client(OkHttpClientFactory httpClientFactory,
+                                         ConnectionPool connectionPool,
+                                         FeignHttpClientProperties httpClientProperties) {
+          Boolean followRedirects = httpClientProperties.isFollowRedirects();
+          Integer connectTimeout = httpClientProperties.getConnectionTimeout();
+          Boolean disableSslValidation = httpClientProperties.isDisableSslValidation();
+          return httpClientFactory.createBuilder(disableSslValidation)
+                  .connectTimeout(connectTimeout, TimeUnit.MILLISECONDS)
+                  .readTimeout(5000, TimeUnit.MILLISECONDS)
+                  .followRedirects(followRedirects).connectionPool(connectionPool)
+                  .build();
+      }
+  }
+  ```
+
+  
 
 ## Ribbon
 
