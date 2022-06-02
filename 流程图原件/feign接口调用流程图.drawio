@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-06-02T11:29:46.931Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36" etag="F3_qyVAbKRPuwQjK_QZZ" version="17.4.6" type="github">
+<mxfile host="app.diagrams.net" modified="2022-06-02T12:06:26.696Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36" etag="Ik2pgnDhKj8Aj11XK_nY" version="17.4.6" type="github">
   <diagram id="WoDHXoN576q5PnCg36Me" name="第 1 页">
     <mxGraphModel dx="1339" dy="604" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
@@ -220,6 +220,14 @@
         <mxCell id="BNzz6FFe_rrqk4d4cfUV-99" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Comic Sans MS;fontColor=#000000;startArrow=none;startFill=0;endArrow=classic;endFill=1;" edge="1" parent="BNzz6FFe_rrqk4d4cfUV-97" source="BNzz6FFe_rrqk4d4cfUV-95" target="BNzz6FFe_rrqk4d4cfUV-98">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="BNzz6FFe_rrqk4d4cfUV-134" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Comic Sans MS;fontColor=#000000;startArrow=none;startFill=0;endArrow=classic;endFill=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="BNzz6FFe_rrqk4d4cfUV-101" target="BNzz6FFe_rrqk4d4cfUV-136">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BNzz6FFe_rrqk4d4cfUV-135" value="响应回来后的关键步骤" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Comic Sans MS;fontColor=#000000;" vertex="1" connectable="0" parent="BNzz6FFe_rrqk4d4cfUV-134">
+          <mxGeometry x="-0.2375" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="BNzz6FFe_rrqk4d4cfUV-101" value="循环进行链遍历执行" style="swimlane;sketch=1;fontFamily=Comic Sans MS;fillColor=#6a00ff;strokeColor=#3700CC;fontColor=#000000;opacity=50;" vertex="1" parent="1">
           <mxGeometry x="-39" y="3715" width="730" height="430" as="geometry" />
         </mxCell>
@@ -336,6 +344,79 @@
         </mxCell>
         <mxCell id="BNzz6FFe_rrqk4d4cfUV-129" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.522;entryY=-0.001;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Comic Sans MS;fontColor=#000000;startArrow=none;startFill=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="BNzz6FFe_rrqk4d4cfUV-125" target="BNzz6FFe_rrqk4d4cfUV-127">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BNzz6FFe_rrqk4d4cfUV-132" value="feign-core: SnchronousMethodHandler" style="swimlane;sketch=1;fontFamily=Comic Sans MS;fillColor=#6a00ff;strokeColor=#3700CC;fontColor=#000000;opacity=50;" vertex="1" parent="1">
+          <mxGeometry x="-39" y="4225" width="730" height="235" as="geometry" />
+        </mxCell>
+        <mxCell id="BNzz6FFe_rrqk4d4cfUV-136" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;executeAndDecode(template,options)&lt;/font&gt;" style="html=1;sketch=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="BNzz6FFe_rrqk4d4cfUV-132">
+          <mxGeometry x="170" y="65" width="390" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BNzz6FFe_rrqk4d4cfUV-137" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;response = response.toBuilder()&lt;br&gt;.request(request)&lt;br&gt;.requestTemplate(template).build()&lt;/font&gt;" style="html=1;sketch=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="BNzz6FFe_rrqk4d4cfUV-132">
+          <mxGeometry x="170" y="145" width="390" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="BNzz6FFe_rrqk4d4cfUV-138" value="在这一行打断点，响应回来后会途径这里" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Comic Sans MS;fontColor=#000000;startArrow=none;startFill=0;endArrow=classic;endFill=1;" edge="1" parent="BNzz6FFe_rrqk4d4cfUV-132" source="BNzz6FFe_rrqk4d4cfUV-136" target="BNzz6FFe_rrqk4d4cfUV-137">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BNzz6FFe_rrqk4d4cfUV-139" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Comic Sans MS;fontColor=#000000;startArrow=none;startFill=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="BNzz6FFe_rrqk4d4cfUV-137">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="326" y="4490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BNzz6FFe_rrqk4d4cfUV-144" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Comic Sans MS;fontColor=#000000;startArrow=none;startFill=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="BNzz6FFe_rrqk4d4cfUV-147">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="326" y="4660" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BNzz6FFe_rrqk4d4cfUV-142" value="响应码是否在200到300之间" style="rhombus;whiteSpace=wrap;html=1;sketch=1;fillStyle=dashed;fontFamily=Comic Sans MS;opacity=50;fillColor=#bac8d3;strokeColor=#23445d;" vertex="1" parent="1">
+          <mxGeometry x="286" y="4490" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="BNzz6FFe_rrqk4d4cfUV-152" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Comic Sans MS;fontColor=#000000;startArrow=none;startFill=0;endArrow=classic;endFill=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="BNzz6FFe_rrqk4d4cfUV-146" target="BNzz6FFe_rrqk4d4cfUV-154">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="328" y="4790" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BNzz6FFe_rrqk4d4cfUV-146" value="decode(response, type)" style="html=1;sketch=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="208.5" y="4660" width="239" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BNzz6FFe_rrqk4d4cfUV-147" value="spring-cloud-openfeign-core: SpringDecoder" style="swimlane;sketch=1;fontFamily=Comic Sans MS;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="76" y="4600" width="500" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="BNzz6FFe_rrqk4d4cfUV-148" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Comic Sans MS;fontColor=#000000;startArrow=none;startFill=0;endArrow=none;endFill=1;" edge="1" parent="1" source="BNzz6FFe_rrqk4d4cfUV-142" target="BNzz6FFe_rrqk4d4cfUV-147">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="326" y="4570" as="sourcePoint" />
+            <mxPoint x="326" y="4660" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BNzz6FFe_rrqk4d4cfUV-149" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Comic Sans MS;fontColor=#000000;" vertex="1" connectable="0" parent="BNzz6FFe_rrqk4d4cfUV-148">
+          <mxGeometry x="-0.1889" y="2" relative="1" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BNzz6FFe_rrqk4d4cfUV-153" value="spring-web: HttpMessageConverterExtractor" style="swimlane;sketch=1;fontFamily=Comic Sans MS;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="70.5" y="4790" width="515" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="BNzz6FFe_rrqk4d4cfUV-154" value="extractData(response)" style="html=1;sketch=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="BNzz6FFe_rrqk4d4cfUV-153">
+          <mxGeometry x="138" y="50" width="239" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BNzz6FFe_rrqk4d4cfUV-155" value="接下来就按照spring解析响应体的方案进行响应体解析了然后返回了" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontFamily=Comic Sans MS;size=0;sketch=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="253" y="4940" width="150" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="BNzz6FFe_rrqk4d4cfUV-161" value="decode(methodKey, response)" style="html=1;sketch=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="671" y="4600" width="239" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BNzz6FFe_rrqk4d4cfUV-163" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;rounded=0;fontFamily=Comic Sans MS;fontColor=#000000;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="BNzz6FFe_rrqk4d4cfUV-161">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="364" y="4530" as="sourcePoint" />
+            <mxPoint x="414" y="4480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BNzz6FFe_rrqk4d4cfUV-165" value="否且响应码非404" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Comic Sans MS;fontColor=#000000;" vertex="1" connectable="0" parent="BNzz6FFe_rrqk4d4cfUV-163">
+          <mxGeometry x="0.0272" y="1" relative="1" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BNzz6FFe_rrqk4d4cfUV-164" value="feign-core: ErrorDecoder.Default" style="swimlane;sketch=1;fontFamily=Comic Sans MS;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="600" y="4550" width="380" height="120" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
