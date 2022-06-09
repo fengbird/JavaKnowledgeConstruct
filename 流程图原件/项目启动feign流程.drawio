@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-06-09T02:30:15.397Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36" etag="cc_zXIQfJB4MpFmh6HOs" version="17.4.6" type="github">
+<mxfile host="app.diagrams.net" modified="2022-06-09T07:23:21.455Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36" etag="hQIdiRubMZyN4HrKD9Zu" version="17.4.6" type="github">
   <diagram id="6Govmc3wS_7p0buZzhA8" name="第 1 页">
-    <mxGraphModel dx="1477" dy="709" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1477" dy="688" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -193,6 +193,12 @@
         </mxCell>
         <mxCell id="RWXPJWkoNP8diTqihZsk-66" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="RWXPJWkoNP8diTqihZsk-57" source="RWXPJWkoNP8diTqihZsk-61" target="RWXPJWkoNP8diTqihZsk-65">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-70" value="追踪源代码的时候，想要确认是在为哪个类注入哪个属性时，可在InjectionMetadata.inject()&lt;br&gt;方法内加断点，element就对应当前待注入的字段，target对应当前的bean对象" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontFamily=Comic Sans MS;size=0;sketch=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="-190" y="2440" width="150" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-71" value="动态代理拿到当前的方法对象,再通过成员变量setterMethodMap拿到对应的Setter对象" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontFamily=Comic Sans MS;size=0;sketch=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="-190" y="2600" width="150" height="120" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
