@@ -1,1 +1,200 @@
-<mxfile host="app.diagrams.net" modified="2022-06-08T07:57:02.760Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36" version="17.4.6" etag="L3KxLclBjBzitvL6jNr0" type="github"><diagram id="6Govmc3wS_7p0buZzhA8">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-06-09T02:30:15.397Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36" etag="cc_zXIQfJB4MpFmh6HOs" version="17.4.6" type="github">
+  <diagram id="6Govmc3wS_7p0buZzhA8" name="第 1 页">
+    <mxGraphModel dx="1477" dy="709" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="RWXPJWkoNP8diTqihZsk-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="RWXPJWkoNP8diTqihZsk-1" target="RWXPJWkoNP8diTqihZsk-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-1" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;@enableFeignClients&lt;/font&gt;" style="html=1;sketch=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="340" y="40" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="RWXPJWkoNP8diTqihZsk-2" target="RWXPJWkoNP8diTqihZsk-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-2" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;registerBeanDefinitions(metadata,registry)&lt;/font&gt;" style="html=1;sketch=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="280" y="190" width="260" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="RWXPJWkoNP8diTqihZsk-4" target="RWXPJWkoNP8diTqihZsk-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=265;entryDy=100;entryPerimeter=0;" edge="1" parent="1" source="RWXPJWkoNP8diTqihZsk-4" target="RWXPJWkoNP8diTqihZsk-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-4" value="regitsterDefaultConfiguration(metadata, registry)" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;sketch=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="290" width="240" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="RWXPJWkoNP8diTqihZsk-8" target="RWXPJWkoNP8diTqihZsk-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-8" value="FeignClientsRegistrar" style="swimlane;sketch=1;fontFamily=Comic Sans MS;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="-125" y="140" width="1085" height="1590" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-9" value="注册默认配置的FeignClientSpecification的BeanDefinition对象；&lt;br&gt;，根据@EnableFeignClients注解从metadata中获取其对应的属性map，再注册name为default.${当前注解所在类全量类名}，configuration为默认配置(即{})，beanName为：${name}.&amp;nbsp;FeignClientSpecification&amp;nbsp;&lt;br&gt;的FeignClientSpecification的BeanDefinition对象" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontFamily=Comic Sans MS;size=0;sketch=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="RWXPJWkoNP8diTqihZsk-8">
+          <mxGeometry x="15" y="77.5" width="265" height="152.5" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="RWXPJWkoNP8diTqihZsk-8" source="RWXPJWkoNP8diTqihZsk-6" target="RWXPJWkoNP8diTqihZsk-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-6" value="registerFeignClients(metadata, registry)" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;sketch=1;" vertex="1" parent="RWXPJWkoNP8diTqihZsk-8">
+          <mxGeometry x="445" y="246.25" width="180" height="43.75" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="RWXPJWkoNP8diTqihZsk-8" source="RWXPJWkoNP8diTqihZsk-11" target="RWXPJWkoNP8diTqihZsk-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-11" value="获取类扫描器Scanner" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;sketch=1;" vertex="1" parent="RWXPJWkoNP8diTqihZsk-8">
+          <mxGeometry x="475" y="320" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-13" value="将FeignClient注解作为注解过滤器设置到扫码器中" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;sketch=1;" vertex="1" parent="RWXPJWkoNP8diTqihZsk-8">
+          <mxGeometry x="475" y="520" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-15" value="将FeignClient注解作为注解过滤器设置到扫描器中" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;sketch=1;" vertex="1" parent="RWXPJWkoNP8diTqihZsk-8">
+          <mxGeometry x="475" y="620" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="RWXPJWkoNP8diTqihZsk-8" source="RWXPJWkoNP8diTqihZsk-13" target="RWXPJWkoNP8diTqihZsk-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="RWXPJWkoNP8diTqihZsk-8" source="RWXPJWkoNP8diTqihZsk-17" target="RWXPJWkoNP8diTqihZsk-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-17" value="分别从EnableFeignClients注解的value、basePackages、basePackageClasses中获取并汇总要扫描的包名" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;sketch=1;" vertex="1" parent="RWXPJWkoNP8diTqihZsk-8">
+          <mxGeometry x="462.5" y="720" width="145" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="RWXPJWkoNP8diTqihZsk-8" source="RWXPJWkoNP8diTqihZsk-15" target="RWXPJWkoNP8diTqihZsk-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-26" value="是" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="RWXPJWkoNP8diTqihZsk-8" source="RWXPJWkoNP8diTqihZsk-19" target="RWXPJWkoNP8diTqihZsk-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-27" value="否" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="RWXPJWkoNP8diTqihZsk-8" source="RWXPJWkoNP8diTqihZsk-19" target="RWXPJWkoNP8diTqihZsk-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-19" value="@EnableFeignClients的clients是否为空" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;sketch=1;" vertex="1" parent="RWXPJWkoNP8diTqihZsk-8">
+          <mxGeometry x="492.5" y="400" width="85" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="RWXPJWkoNP8diTqihZsk-8" source="RWXPJWkoNP8diTqihZsk-22" target="RWXPJWkoNP8diTqihZsk-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-22" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;这种情况用的较少，&lt;br&gt;clients上的注释写的是若这里不为空，&lt;br&gt;禁用类路径的扫描&lt;/font&gt;" style="html=1;sketch=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="RWXPJWkoNP8diTqihZsk-8">
+          <mxGeometry x="705" y="520" width="225" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-28" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;遍历basePackages，扫描器扫描获取对应包下的类，生成对应的ScannedGenericBeanDefinition对象&lt;/font&gt;" style="html=1;sketch=1;fillColor=#d5e8d4;strokeColor=#82b366;whiteSpace=wrap;" vertex="1" parent="RWXPJWkoNP8diTqihZsk-8">
+          <mxGeometry x="445" y="860" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-31" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;将对象转为AnnotatedBeanDefinition对象，进而获取到注解FeignClient注解中设置的属性值&lt;/font&gt;" style="html=1;sketch=1;fillColor=#d5e8d4;strokeColor=#82b366;whiteSpace=wrap;" vertex="1" parent="RWXPJWkoNP8diTqihZsk-8">
+          <mxGeometry x="445" y="960" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="RWXPJWkoNP8diTqihZsk-8" source="RWXPJWkoNP8diTqihZsk-28" target="RWXPJWkoNP8diTqihZsk-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-33" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;将对象转为AnnotatedBeanDefinition对象，进而获取到注解FeignClient注解中设置的属性值&lt;/font&gt;" style="html=1;sketch=1;fillColor=#d5e8d4;strokeColor=#82b366;whiteSpace=wrap;" vertex="1" parent="RWXPJWkoNP8diTqihZsk-8">
+          <mxGeometry x="445" y="1050" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="RWXPJWkoNP8diTqihZsk-8" source="RWXPJWkoNP8diTqihZsk-31" target="RWXPJWkoNP8diTqihZsk-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-35" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;注册客户端的配置，registerClientConfiguration(...)&lt;/font&gt;" style="html=1;sketch=1;fillColor=#d5e8d4;strokeColor=#82b366;whiteSpace=wrap;" vertex="1" parent="RWXPJWkoNP8diTqihZsk-8">
+          <mxGeometry x="445" y="1160" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="RWXPJWkoNP8diTqihZsk-8" source="RWXPJWkoNP8diTqihZsk-33" target="RWXPJWkoNP8diTqihZsk-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-37" value="注册为FeignClientSpecification的BeanDefinition对象，对应beanName为${name}.FeignClientSpecification，该对象中的属性：name为FeignClient注解的name属性对应值，configuration为FeignClient注解中对应的值" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontFamily=Comic Sans MS;size=0;sketch=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="RWXPJWkoNP8diTqihZsk-8">
+          <mxGeometry x="85" y="1120" width="205" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=205;entryDy=75;entryPerimeter=0;" edge="1" parent="RWXPJWkoNP8diTqihZsk-8" source="RWXPJWkoNP8diTqihZsk-35" target="RWXPJWkoNP8diTqihZsk-37">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="325" y="1195" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="RWXPJWkoNP8diTqihZsk-8" source="RWXPJWkoNP8diTqihZsk-39" target="RWXPJWkoNP8diTqihZsk-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-39" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;注册feign客户端，registerFeignClient(...)&lt;/font&gt;" style="html=1;sketch=1;fillColor=#d5e8d4;strokeColor=#82b366;whiteSpace=wrap;" vertex="1" parent="RWXPJWkoNP8diTqihZsk-8">
+          <mxGeometry x="445" y="1270" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-40" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="RWXPJWkoNP8diTqihZsk-8" source="RWXPJWkoNP8diTqihZsk-35" target="RWXPJWkoNP8diTqihZsk-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-41" value="生成FeignClientFactoryBean的BeanDefinition对象，再分别从FeignClient注解中取值，设置到对应的属性中，其中，name取值时，先取serviceId,再取name,再取value；contextId取值时，先取contextId，再按name的取值顺序来取，bean的别名(alias)设置规则为：${contextId}FeignClient,若FeignClient的属性qualifier有值，则别名取qualifier的值，beanName的值即FeignClient注解所在类型的全类路径名${className}" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontFamily=Comic Sans MS;size=0;sketch=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="RWXPJWkoNP8diTqihZsk-8">
+          <mxGeometry x="78.75" y="1300" width="217.5" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="RWXPJWkoNP8diTqihZsk-8" source="RWXPJWkoNP8diTqihZsk-44" target="RWXPJWkoNP8diTqihZsk-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-44" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;注册别名registry.registerAlias(beanName, alias)&lt;/font&gt;" style="html=1;sketch=1;fillColor=#d5e8d4;strokeColor=#82b366;whiteSpace=wrap;" vertex="1" parent="RWXPJWkoNP8diTqihZsk-8">
+          <mxGeometry x="425" y="1420" width="220" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-45" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="RWXPJWkoNP8diTqihZsk-8" source="RWXPJWkoNP8diTqihZsk-39" target="RWXPJWkoNP8diTqihZsk-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-46" value="最终会注册到SimpleAliasRegistry的aliasMap中，注册时，alias为key，beanName为value, 若是FeignClient中的ContextId不设置，那么几乎一个项目中所有feign接口对应的alias都是相同的，另外，就是在这一步注册的时候对是否允许bean definition overriding进行校验的，若在配置中没有指定重写，这里就会报异常，若开启了重写为true，虽不会报异常，但是别名注册这块因为存在覆盖的情况，意义也就不大了" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontFamily=Comic Sans MS;size=0;sketch=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="RWXPJWkoNP8diTqihZsk-8">
+          <mxGeometry x="715" y="1357.5" width="205" height="195" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" edge="1" parent="1" source="RWXPJWkoNP8diTqihZsk-48" target="RWXPJWkoNP8diTqihZsk-51">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="417.5" y="2030" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-48" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;利用SimpleInstantiationStrategyd的instantiate方法实例化上述的BeanDefinition对象&lt;/font&gt;" style="html=1;sketch=1;fillColor=#d5e8d4;strokeColor=#82b366;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="258.75" y="1820" width="317.5" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-51" value="FeignAutoConfiguration" style="swimlane;sketch=1;fontFamily=Comic Sans MS;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="52.5" y="1980" width="730" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-52" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;feignFeature()&lt;/font&gt;" style="html=1;sketch=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="RWXPJWkoNP8diTqihZsk-51">
+          <mxGeometry x="302.5" y="50" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-55" value="实例化feign的上下文，上面产生的FeignClientSpecification配置集合对象都会在这里装载" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontFamily=Comic Sans MS;size=0;sketch=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="RWXPJWkoNP8diTqihZsk-51">
+          <mxGeometry x="87.5" y="180" width="150" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.02;entryY=0.354;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="RWXPJWkoNP8diTqihZsk-53" target="RWXPJWkoNP8diTqihZsk-55">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-53" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;feignContext()&lt;/font&gt;" style="html=1;sketch=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="355" y="2170" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-54" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" edge="1" parent="1" source="RWXPJWkoNP8diTqihZsk-52" target="RWXPJWkoNP8diTqihZsk-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-57" value="FeignClientsConfiguration" style="swimlane;sketch=1;fontFamily=Comic Sans MS;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="60" y="2350" width="730" height="540" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="RWXPJWkoNP8diTqihZsk-57" source="RWXPJWkoNP8diTqihZsk-58" target="RWXPJWkoNP8diTqihZsk-59">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-58" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;feignConversionService()&lt;/font&gt;" style="html=1;sketch=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="RWXPJWkoNP8diTqihZsk-57">
+          <mxGeometry x="293.75" y="60" width="142.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-59" value="配置格式转换服务，用于属性的格式转换，这里直接沿用了Spring的格式化转换服务" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontFamily=Comic Sans MS;size=0;sketch=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="RWXPJWkoNP8diTqihZsk-57">
+          <mxGeometry x="80" y="60" width="150" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="RWXPJWkoNP8diTqihZsk-57" source="RWXPJWkoNP8diTqihZsk-61" target="RWXPJWkoNP8diTqihZsk-63">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-61" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;feignContract(ConversionService feignConversionService)&lt;/font&gt;" style="html=1;sketch=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="RWXPJWkoNP8diTqihZsk-57">
+          <mxGeometry x="196.88" y="200" width="336.25" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-62" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="RWXPJWkoNP8diTqihZsk-57" source="RWXPJWkoNP8diTqihZsk-58" target="RWXPJWkoNP8diTqihZsk-61">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-63" value="获取Feign的契约类，定义接口上有效的注解和值" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontFamily=Comic Sans MS;size=0;sketch=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="RWXPJWkoNP8diTqihZsk-57">
+          <mxGeometry x="20" y="190" width="150" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-67" value="项目中未用spring-retry 的jar包，这里的重试机制就为从不重试" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontFamily=Comic Sans MS;size=0;sketch=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="RWXPJWkoNP8diTqihZsk-57">
+          <mxGeometry x="20" y="330" width="150" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-69" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=150;entryDy=60;entryPerimeter=0;" edge="1" parent="RWXPJWkoNP8diTqihZsk-57" source="RWXPJWkoNP8diTqihZsk-65" target="RWXPJWkoNP8diTqihZsk-67">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-65" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;feignRetryer()&lt;/font&gt;" style="html=1;sketch=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="RWXPJWkoNP8diTqihZsk-57">
+          <mxGeometry x="206.72" y="350" width="316.56" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-66" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="RWXPJWkoNP8diTqihZsk-57" source="RWXPJWkoNP8diTqihZsk-61" target="RWXPJWkoNP8diTqihZsk-65">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
