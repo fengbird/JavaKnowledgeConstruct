@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-06-09T07:23:21.455Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36" etag="hQIdiRubMZyN4HrKD9Zu" version="17.4.6" type="github">
+<mxfile host="app.diagrams.net" modified="2022-06-09T09:29:47.119Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36" etag="pLFpfAIKi2_UiXoxIz1Y" version="17.4.6" type="github">
   <diagram id="6Govmc3wS_7p0buZzhA8" name="第 1 页">
     <mxGraphModel dx="1477" dy="688" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -141,25 +141,34 @@
           <mxGeometry x="258.75" y="1820" width="317.5" height="100" as="geometry" />
         </mxCell>
         <mxCell id="RWXPJWkoNP8diTqihZsk-51" value="FeignAutoConfiguration" style="swimlane;sketch=1;fontFamily=Comic Sans MS;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="52.5" y="1980" width="730" height="320" as="geometry" />
+          <mxGeometry x="60" y="1970" width="717.5" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-74" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="RWXPJWkoNP8diTqihZsk-51" source="RWXPJWkoNP8diTqihZsk-52" target="RWXPJWkoNP8diTqihZsk-72">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="RWXPJWkoNP8diTqihZsk-52" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;feignFeature()&lt;/font&gt;" style="html=1;sketch=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="RWXPJWkoNP8diTqihZsk-51">
+          <mxGeometry x="302.5" y="140" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-72" value="为Spring的hasFeatures的断点，在CommonsClientAutoConfiguration&lt;br&gt;.$ActuatorConfiguration中有用到，对于feign的主流程来说没啥用" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontFamily=Comic Sans MS;size=0;sketch=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="RWXPJWkoNP8diTqihZsk-51">
+          <mxGeometry x="10" y="50" width="197.5" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-73" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;实例化并填充成员变量：&lt;br&gt;configurations&lt;br&gt;&lt;br&gt;&lt;/font&gt;" style="html=1;sketch=1;fillColor=#d5e8d4;strokeColor=#82b366;whiteSpace=wrap;" vertex="1" parent="RWXPJWkoNP8diTqihZsk-51">
           <mxGeometry x="302.5" y="50" width="110" height="60" as="geometry" />
         </mxCell>
         <mxCell id="RWXPJWkoNP8diTqihZsk-55" value="实例化feign的上下文，上面产生的FeignClientSpecification配置集合对象都会在这里装载" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontFamily=Comic Sans MS;size=0;sketch=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="RWXPJWkoNP8diTqihZsk-51">
-          <mxGeometry x="87.5" y="180" width="150" height="120" as="geometry" />
+          <mxGeometry x="70" y="400" width="150" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="RWXPJWkoNP8diTqihZsk-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.02;entryY=0.354;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="RWXPJWkoNP8diTqihZsk-53" target="RWXPJWkoNP8diTqihZsk-55">
+        <mxCell id="RWXPJWkoNP8diTqihZsk-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=150;entryDy=60;entryPerimeter=0;" edge="1" parent="RWXPJWkoNP8diTqihZsk-51" source="RWXPJWkoNP8diTqihZsk-53" target="RWXPJWkoNP8diTqihZsk-55">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="RWXPJWkoNP8diTqihZsk-53" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;feignContext()&lt;/font&gt;" style="html=1;sketch=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="355" y="2170" width="110" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="RWXPJWkoNP8diTqihZsk-54" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" edge="1" parent="1" source="RWXPJWkoNP8diTqihZsk-52" target="RWXPJWkoNP8diTqihZsk-53">
+        <mxCell id="RWXPJWkoNP8diTqihZsk-75" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="RWXPJWkoNP8diTqihZsk-51" source="RWXPJWkoNP8diTqihZsk-53" target="RWXPJWkoNP8diTqihZsk-55">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-53" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;feignContext()&lt;/font&gt;" style="html=1;sketch=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="RWXPJWkoNP8diTqihZsk-51">
+          <mxGeometry x="292.5" y="430" width="110" height="60" as="geometry" />
         </mxCell>
         <mxCell id="RWXPJWkoNP8diTqihZsk-57" value="FeignClientsConfiguration" style="swimlane;sketch=1;fontFamily=Comic Sans MS;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="60" y="2350" width="730" height="540" as="geometry" />
+          <mxGeometry x="52.5" y="2820" width="730" height="540" as="geometry" />
         </mxCell>
         <mxCell id="RWXPJWkoNP8diTqihZsk-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="RWXPJWkoNP8diTqihZsk-57" source="RWXPJWkoNP8diTqihZsk-58" target="RWXPJWkoNP8diTqihZsk-59">
           <mxGeometry relative="1" as="geometry" />
@@ -194,8 +203,8 @@
         <mxCell id="RWXPJWkoNP8diTqihZsk-66" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="RWXPJWkoNP8diTqihZsk-57" source="RWXPJWkoNP8diTqihZsk-61" target="RWXPJWkoNP8diTqihZsk-65">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="RWXPJWkoNP8diTqihZsk-70" value="追踪源代码的时候，想要确认是在为哪个类注入哪个属性时，可在InjectionMetadata.inject()&lt;br&gt;方法内加断点，element就对应当前待注入的字段，target对应当前的bean对象" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontFamily=Comic Sans MS;size=0;sketch=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="-190" y="2440" width="150" height="120" as="geometry" />
+        <mxCell id="RWXPJWkoNP8diTqihZsk-70" value="追踪源代码的时候，想要确认是在为哪个类注入哪个属性时，可在InjectionMetadata.inject()&lt;br&gt;方法内加断点，element就对应当前待注入的字段，target对应当前的bean对象，在追踪项目启动时的流程，通过这个节点可以看出很多调用关系" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontFamily=Comic Sans MS;size=0;sketch=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="-200" y="2340" width="160" height="180" as="geometry" />
         </mxCell>
         <mxCell id="RWXPJWkoNP8diTqihZsk-71" value="动态代理拿到当前的方法对象,再通过成员变量setterMethodMap拿到对应的Setter对象" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontFamily=Comic Sans MS;size=0;sketch=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
           <mxGeometry x="-190" y="2600" width="150" height="120" as="geometry" />
