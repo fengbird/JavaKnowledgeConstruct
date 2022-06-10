@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-06-09T09:29:47.119Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36" etag="pLFpfAIKi2_UiXoxIz1Y" version="17.4.6" type="github">
+<mxfile host="app.diagrams.net" modified="2022-06-10T08:55:33.206Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36" etag="9cmbEKh-bhgp81zhxhRg" version="17.4.6" type="github">
   <diagram id="6Govmc3wS_7p0buZzhA8" name="第 1 页">
-    <mxGraphModel dx="1477" dy="688" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1363" dy="710" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -208,6 +208,9 @@
         </mxCell>
         <mxCell id="RWXPJWkoNP8diTqihZsk-71" value="动态代理拿到当前的方法对象,再通过成员变量setterMethodMap拿到对应的Setter对象" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontFamily=Comic Sans MS;size=0;sketch=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
           <mxGeometry x="-190" y="2600" width="150" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-76" value="DefaultListableBeanFactory为spring的实际bean工厂类，从该类中根据BeanDefinition获取到实际的bean对象，该类的注释可以多看看" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontFamily=Comic Sans MS;size=0;sketch=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="-190" y="2760" width="150" height="120" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
