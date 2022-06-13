@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-06-11T03:09:09.509Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36" etag="7YtaOkdyIdd3gNtbbCpE" version="17.4.6" type="github">
+<mxfile host="app.diagrams.net" modified="2022-06-13T06:44:22.127Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36" etag="Tb-vyZHUuFevxCMoe5Gl" version="17.4.6" type="github">
   <diagram id="6Govmc3wS_7p0buZzhA8" name="第 1 页">
-    <mxGraphModel dx="1363" dy="710" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1363" dy="681" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -206,16 +206,7 @@
           <mxGeometry x="291.25" y="1780" width="295" height="90" as="geometry" />
         </mxCell>
         <mxCell id="RWXPJWkoNP8diTqihZsk-55" value="实例化feign的上下文，上面产生的FeignClientSpecification配置集合对象都会在这里装载" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontFamily=Comic Sans MS;size=0;sketch=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="155.01" y="3030" width="150" height="120" as="geometry" />
-        </mxCell>
-        <mxCell id="RWXPJWkoNP8diTqihZsk-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=150;entryDy=60;entryPerimeter=0;" edge="1" parent="1" source="RWXPJWkoNP8diTqihZsk-53" target="RWXPJWkoNP8diTqihZsk-55">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="RWXPJWkoNP8diTqihZsk-75" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="RWXPJWkoNP8diTqihZsk-53" target="RWXPJWkoNP8diTqihZsk-55">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="RWXPJWkoNP8diTqihZsk-53" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;feignContext()&lt;/font&gt;" style="html=1;sketch=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="377.51" y="3060" width="110" height="60" as="geometry" />
+          <mxGeometry x="-30" y="2725" width="150" height="120" as="geometry" />
         </mxCell>
         <mxCell id="RWXPJWkoNP8diTqihZsk-83" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="RWXPJWkoNP8diTqihZsk-81" target="RWXPJWkoNP8diTqihZsk-82">
           <mxGeometry relative="1" as="geometry" />
@@ -270,8 +261,35 @@
         <mxCell id="RWXPJWkoNP8diTqihZsk-94" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;FeignClientext context = this.applicationContext.getBean(FeignContext.class)&lt;/font&gt;" style="html=1;sketch=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="205.01" y="2640" width="440" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-100" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="RWXPJWkoNP8diTqihZsk-96" target="RWXPJWkoNP8diTqihZsk-55">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-102" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="RWXPJWkoNP8diTqihZsk-96" target="RWXPJWkoNP8diTqihZsk-101">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="RWXPJWkoNP8diTqihZsk-96" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;FeignAutoConfiguration.feignContext()&lt;/font&gt;" style="html=1;sketch=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="310.01" y="2760" width="230" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-104" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="RWXPJWkoNP8diTqihZsk-101" target="RWXPJWkoNP8diTqihZsk-103">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-101" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;FeignClientFactoryBean.feign(FeignContext context)&lt;/font&gt;" style="html=1;sketch=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="270.01" y="2845" width="309.99" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-106" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="RWXPJWkoNP8diTqihZsk-103" target="RWXPJWkoNP8diTqihZsk-105">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-103" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;FeignClientFactoryBean#FeignLoggerFactory loggerFactory = get(context, FeignLoggerFactory.class);&lt;/font&gt;" style="html=1;sketch=1;fillColor=#d5e8d4;strokeColor=#82b366;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="205.01" y="2940" width="439.99" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-108" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=150;entryDy=60;entryPerimeter=0;" edge="1" parent="1" source="RWXPJWkoNP8diTqihZsk-105" target="RWXPJWkoNP8diTqihZsk-107">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-105" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;NamedContextFactory#&lt;/font&gt;&lt;span&gt;&lt;font face=&quot;Comic Sans MS&quot;&gt;context.register(PropertyPlaceholderAutoConfiguration.class,&lt;/font&gt;&lt;/span&gt;&lt;div&gt;&lt;font face=&quot;Comic Sans MS&quot;&gt;&lt;span&gt;				&lt;/span&gt;this.defaultConfigType)&lt;/font&gt;&lt;/div&gt;" style="html=1;sketch=1;fillColor=#d5e8d4;strokeColor=#82b366;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="205.01999999999998" y="3040" width="439.99" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-107" value="此处的defaultConfigType类型就是FeiContext中配置的FeignClientsConfiguration" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontFamily=Comic Sans MS;size=0;sketch=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="-30" y="3010" width="150" height="120" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
