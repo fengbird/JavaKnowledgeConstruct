@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-06-13T11:25:08.200Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36" etag="UOFJjhT56BnAv0zQkumj" version="17.4.6" type="github">
+<mxfile host="app.diagrams.net" modified="2022-06-13T11:53:53.664Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36" etag="zgAS8aw_dz5WfJ2DX99j" version="17.4.6" type="github">
   <diagram id="6Govmc3wS_7p0buZzhA8" name="第 1 页">
     <mxGraphModel dx="1363" dy="681" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -302,7 +302,7 @@
         <mxCell id="RWXPJWkoNP8diTqihZsk-125" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=150;entryDy=60;entryPerimeter=0;" edge="1" parent="1" source="RWXPJWkoNP8diTqihZsk-122" target="RWXPJWkoNP8diTqihZsk-124">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="RWXPJWkoNP8diTqihZsk-127" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="RWXPJWkoNP8diTqihZsk-122" target="RWXPJWkoNP8diTqihZsk-126">
+        <mxCell id="RWXPJWkoNP8diTqihZsk-149" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="RWXPJWkoNP8diTqihZsk-122" target="RWXPJWkoNP8diTqihZsk-148">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="RWXPJWkoNP8diTqihZsk-122" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;configureUsingProperties(config, builder) 配置feign.builder&lt;/font&gt;" style="html=1;sketch=1;fillColor=#d5e8d4;strokeColor=#82b366;whiteSpace=wrap;" vertex="1" parent="1">
@@ -315,13 +315,13 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="RWXPJWkoNP8diTqihZsk-126" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;FeignClientFactoryBean.getTarget()#loadBalance(builder, context, new HardCodedTarget&amp;lt;&amp;gt;(this.type, this.name, this.url))&lt;/font&gt;" style="html=1;sketch=1;fillColor=#d5e8d4;strokeColor=#82b366;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="236.59" y="3680" width="374.98" height="60" as="geometry" />
+          <mxGeometry x="236.59" y="3840" width="374.98" height="60" as="geometry" />
         </mxCell>
         <mxCell id="RWXPJWkoNP8diTqihZsk-131" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="RWXPJWkoNP8diTqihZsk-128" target="RWXPJWkoNP8diTqihZsk-130">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="RWXPJWkoNP8diTqihZsk-128" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;Targeter targeter = get(context, Targeter.class)&lt;/font&gt;" style="html=1;sketch=1;fillColor=#d5e8d4;strokeColor=#82b366;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="236.59000000000003" y="3780" width="374.98" height="60" as="geometry" />
+          <mxGeometry x="236.59000000000003" y="3940" width="374.98" height="60" as="geometry" />
         </mxCell>
         <mxCell id="RWXPJWkoNP8diTqihZsk-133" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=150;entryDy=60;entryPerimeter=0;" edge="1" parent="1" source="RWXPJWkoNP8diTqihZsk-130" target="RWXPJWkoNP8diTqihZsk-132">
           <mxGeometry relative="1" as="geometry" />
@@ -330,10 +330,10 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="RWXPJWkoNP8diTqihZsk-130" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;FeignAutoConfiguration#feignTargeter()&lt;/font&gt;" style="html=1;sketch=1;fillColor=#d5e8d4;strokeColor=#82b366;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="236.59000000000003" y="3870" width="374.98" height="60" as="geometry" />
+          <mxGeometry x="236.59000000000003" y="4030" width="374.98" height="60" as="geometry" />
         </mxCell>
         <mxCell id="RWXPJWkoNP8diTqihZsk-132" value="此处也是通过工厂方法的方式获取到的Targeter实例，为 HystrixTargeter" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontFamily=Comic Sans MS;size=0;sketch=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="-40" y="3840" width="150" height="120" as="geometry" />
+          <mxGeometry x="-40" y="4000" width="150" height="120" as="geometry" />
         </mxCell>
         <mxCell id="RWXPJWkoNP8diTqihZsk-137" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="RWXPJWkoNP8diTqihZsk-134" target="RWXPJWkoNP8diTqihZsk-136">
           <mxGeometry relative="1" as="geometry" />
@@ -342,7 +342,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="RWXPJWkoNP8diTqihZsk-134" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;ReflectiveFeign.newInstance(Target&amp;lt;T&amp;gt; target)&lt;/font&gt;" style="html=1;sketch=1;fillColor=#d5e8d4;strokeColor=#82b366;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="236.59000000000003" y="3990" width="374.98" height="60" as="geometry" />
+          <mxGeometry x="236.59000000000003" y="4150" width="374.98" height="60" as="geometry" />
         </mxCell>
         <mxCell id="RWXPJWkoNP8diTqihZsk-139" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="RWXPJWkoNP8diTqihZsk-136" target="RWXPJWkoNP8diTqihZsk-138">
           <mxGeometry relative="1" as="geometry" />
@@ -351,22 +351,52 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="RWXPJWkoNP8diTqihZsk-136" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;InvacationHandler handler&amp;nbsp; = factory.create(target, methodToHandler);&lt;/font&gt;" style="html=1;sketch=1;fillColor=#d5e8d4;strokeColor=#82b366;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="236.59000000000003" y="4100" width="374.98" height="60" as="geometry" />
+          <mxGeometry x="236.59000000000003" y="4260" width="374.98" height="60" as="geometry" />
         </mxCell>
         <mxCell id="RWXPJWkoNP8diTqihZsk-138" value="创建方法的调用处理器HystrixInvocationHandler,&amp;nbsp; 设置其属性target、dispatch、fallbackFactory、fallbackMethodMap、setterMethodMap" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontFamily=Comic Sans MS;size=0;sketch=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="-40" y="4070" width="150" height="120" as="geometry" />
+          <mxGeometry x="-40" y="4230" width="150" height="120" as="geometry" />
         </mxCell>
         <mxCell id="RWXPJWkoNP8diTqihZsk-145" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=150;entryDy=60;entryPerimeter=0;" edge="1" parent="1" source="RWXPJWkoNP8diTqihZsk-140" target="RWXPJWkoNP8diTqihZsk-142">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="RWXPJWkoNP8diTqihZsk-140" value="&lt;div&gt;&lt;font face=&quot;Comic Sans MS&quot;&gt;T proxy = (T) Proxy.newProxyInstance(target.type().getClassLoader(),&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Comic Sans MS&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; new Class&amp;lt;?&amp;gt;[] {target.type()}, handler);&lt;/font&gt;&lt;/div&gt;" style="html=1;sketch=1;fillColor=#d5e8d4;strokeColor=#82b366;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="236.59000000000003" y="4240" width="374.98" height="60" as="geometry" />
+          <mxGeometry x="236.59000000000003" y="4400" width="374.98" height="60" as="geometry" />
         </mxCell>
         <mxCell id="RWXPJWkoNP8diTqihZsk-142" value="使用方法调用处理器，采用动态代理创建代理对象并返回，返回值即为feign接口对应的实际对象" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontFamily=Comic Sans MS;size=0;sketch=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="-40" y="4210" width="150" height="120" as="geometry" />
+          <mxGeometry x="-40" y="4370" width="150" height="120" as="geometry" />
         </mxCell>
         <mxCell id="RWXPJWkoNP8diTqihZsk-146" value="target 为HardCodedTarget(type = xxxApi, name= xxx, url=xxx)" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontFamily=Comic Sans MS;size=0;sketch=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="-25" y="3970" width="120" height="100" as="geometry" />
+          <mxGeometry x="-25" y="4130" width="120" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-150" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="RWXPJWkoNP8diTqihZsk-148" target="RWXPJWkoNP8diTqihZsk-126">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-151" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="RWXPJWkoNP8diTqihZsk-150">
+          <mxGeometry x="-0.2611" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-153" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="RWXPJWkoNP8diTqihZsk-148" target="RWXPJWkoNP8diTqihZsk-152">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-156" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="RWXPJWkoNP8diTqihZsk-153">
+          <mxGeometry x="-0.3693" y="-1" relative="1" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-155" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" target="RWXPJWkoNP8diTqihZsk-154">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="3810" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-148" value="当前对象的url是否为空" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;sketch=1;" vertex="1" parent="1">
+          <mxGeometry x="384.08000000000004" y="3710" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-152" value="已有url，证明这个feign要调用的服务url已确定，不需要负载均衡相关的东西了，这里给代理类设置client的时候就直接为OkHttpClient了" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;sketch=1;" vertex="1" parent="1">
+          <mxGeometry x="640.01" y="3840" width="205.92" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="RWXPJWkoNP8diTqihZsk-154" value="若url参数为空，那么给最终的代理类对象设置实际执行请求的client的时候是LoadBalancerFeignClient,在执行请求之前会根据负载均衡找到对应的服务器url然后执行" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontFamily=Comic Sans MS;size=0;sketch=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="100" y="3720" width="150" height="120" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
