@@ -1,1 +1,67 @@
-<mxfile host="app.diagrams.net" modified="2022-06-23T06:24:25.115Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" version="20.0.1" etag="NkNO6GdasRQiruBiKln7" type="github"><diagram id="SWgv_zSJP85A-4vinMlY">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-06-23T08:28:10.163Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="vIbkRAieS3sQWueqQfA9" version="20.0.1" type="github">
+  <diagram id="SWgv_zSJP85A-4vinMlY" name="第 1 页">
+    <mxGraphModel dx="1186" dy="677" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="cc2uOU-bhD95k6_g1xUi-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="cc2uOU-bhD95k6_g1xUi-1" target="cc2uOU-bhD95k6_g1xUi-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cc2uOU-bhD95k6_g1xUi-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="cc2uOU-bhD95k6_g1xUi-1" target="cc2uOU-bhD95k6_g1xUi-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cc2uOU-bhD95k6_g1xUi-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="cc2uOU-bhD95k6_g1xUi-1" target="cc2uOU-bhD95k6_g1xUi-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cc2uOU-bhD95k6_g1xUi-1" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;备考列表页&lt;/font&gt;" style="html=1;sketch=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="359" y="10" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cc2uOU-bhD95k6_g1xUi-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="cc2uOU-bhD95k6_g1xUi-2" target="cc2uOU-bhD95k6_g1xUi-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cc2uOU-bhD95k6_g1xUi-2" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;banner图配置&lt;/font&gt;" style="html=1;sketch=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="140" y="120" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cc2uOU-bhD95k6_g1xUi-3" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;新增Apollo配置，逗号隔开&lt;/font&gt;" style="html=1;sketch=1;fillColor=#d5e8d4;strokeColor=#82b366;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="140" y="230" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cc2uOU-bhD95k6_g1xUi-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="cc2uOU-bhD95k6_g1xUi-4" target="cc2uOU-bhD95k6_g1xUi-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cc2uOU-bhD95k6_g1xUi-4" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;列表页查询&lt;/font&gt;" style="html=1;sketch=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="359" y="120" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cc2uOU-bhD95k6_g1xUi-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="cc2uOU-bhD95k6_g1xUi-5" target="cc2uOU-bhD95k6_g1xUi-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cc2uOU-bhD95k6_g1xUi-5" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;Apollo配置定义大类顺序，程序中设立默认值，本次先不在Apollo中设置，后续有更改，再在Apollo中配置&lt;/font&gt;" style="html=1;sketch=1;fillColor=#d5e8d4;strokeColor=#82b366;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="334" y="230" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="cc2uOU-bhD95k6_g1xUi-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="cc2uOU-bhD95k6_g1xUi-6" target="cc2uOU-bhD95k6_g1xUi-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cc2uOU-bhD95k6_g1xUi-6" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;小鹅通商品&lt;/font&gt;" style="html=1;sketch=1;fillColor=#d5e8d4;strokeColor=#82b366;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="580" y="120" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cc2uOU-bhD95k6_g1xUi-7" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;点击跳转链接配置到Apollo&lt;/font&gt;" style="html=1;sketch=1;fillColor=#d5e8d4;strokeColor=#82b366;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="580" y="230" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cc2uOU-bhD95k6_g1xUi-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="cc2uOU-bhD95k6_g1xUi-14" target="cc2uOU-bhD95k6_g1xUi-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cc2uOU-bhD95k6_g1xUi-14" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;模考包查询时按level_type&lt;br&gt;+level_id&lt;br&gt;+level_branch_id 定位到每个模考包所属大类&lt;/font&gt;" style="html=1;sketch=1;fillColor=#d5e8d4;strokeColor=#82b366;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="338" y="360" width="151" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="cc2uOU-bhD95k6_g1xUi-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="cc2uOU-bhD95k6_g1xUi-15" target="cc2uOU-bhD95k6_g1xUi-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cc2uOU-bhD95k6_g1xUi-15" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;利用serial_num进行排序&lt;/font&gt;" style="html=1;sketch=1;fillColor=#d5e8d4;strokeColor=#82b366;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="359" y="480" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cc2uOU-bhD95k6_g1xUi-16" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;serial_num相同时按更新时间最近进行数据排序&lt;/font&gt;" style="html=1;sketch=1;fillColor=#d5e8d4;strokeColor=#82b366;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="359" y="585" width="110" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
